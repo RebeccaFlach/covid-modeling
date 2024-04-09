@@ -18,10 +18,11 @@ We will run modified iterations of the simulation in which the following changes
 
 A possible extension is to run the simulation in a layout of an Olin building, such as the dining hall, rather than a supermarket. Another route would be replicating the long-staying air borne property of covid-19 and making some nodes in the graph “infected” after an infected person stays there.
 
-5. ![expected_results_sketch (2)](https://github.com/RebeccaFlach/covid-modeling/assets/47285707/54c7595f-0f55-4f01-b93b-a93c34377e65)
+5. Expected Results Sketch:
+   ![expected_results_sketch (2)](https://github.com/RebeccaFlach/covid-modeling/assets/47285707/54c7595f-0f55-4f01-b93b-a93c34377e65)
 
-6. The paper focuses on the total amount of time that a susceptible person is within range of an infected person, so we will use that as our primary measure to compare with the original paper. 
+7. The paper focuses on the total amount of time that a susceptible person is within range of an infected person, so we will use that as our primary measure to compare with the original paper. 
 
-7. Because the source code for the paper is already available online, our project will probably be more focused on extension than replication, so an area of concern is our ability to create a bigger extension. We are also still unsure how much work it will be to get the source code working, so we are unsure what our replication will be like. 
+8. Because the source code for the paper is already available online, our project will probably be more focused on extension than replication, so an area of concern is our ability to create a bigger extension. We are also still unsure how much work it will be to get the source code working, so we are unsure what our replication will be like. 
 
-8. In the next week, we plan to look through the source code, try to understand it, and get it running. Then, we will begin looking at simple modifications and extensions we can make. 
+9. In the next week, we plan to look through the source code, try to understand it, and get it running. Then, we will begin looking at simple modifications and extensions we can make. 
