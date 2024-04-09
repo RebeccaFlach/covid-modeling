@@ -8,7 +8,7 @@ By: Rebecca Flash and Daniel Quinteros
 
 In this paper, the authors investigate how COVID is transmitted within a supermarket, and use their model to determine the most effective interventions to decrease spread. In their primary experiment, they model a small supermarket using a graph, where each node is a place where a customer would stop and interact with the shelves, register, or other important point. They then create agents to represent customers, each with a random path through the store and time spent at each location. Infection risk is estimated by the amount of time a susceptible agent spends in proximity to an infected agent. They find that transmission risk is increased by bottleneck points, like the registers, and that limiting the number of customers in the store is an effective way to reduce transmission.
 
-5. We plan to replicate the experiment that models the supermarket and tracks COVID risk. The paper's source code is available online, so we will be using that as a starting place. For our replication, we are planning to get their code working and then modify it to use a more current understanding of COVID transmission and produce different visualizations. 
+4. We plan to replicate the experiment that models the supermarket and tracks COVID risk. The paper's source code is available online, so we will be using that as a starting place. For our replication, we are planning to get their code working and then modify it to use a more current understanding of COVID transmission and produce different visualizations. 
 
 We will run modified iterations of the simulation in which the following changes are made:
 - Control the rate of customer arrival
