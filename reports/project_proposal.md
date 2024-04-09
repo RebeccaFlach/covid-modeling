@@ -1,4 +1,6 @@
-1. COVID-19 Modeling in Supermarkets
+# COVID-19 Modeling in Supermarkets
+
+By: Rebecca Flash and Daniel Quinteros
 
 2. We plan to investigate the spread of COVID-19 in supermarkets via simulations of people shopping, some of whom might be infectious, and how to best mitigate the spread. We will mostly be referencing our main paper’s [source code](https://www.semanticscholar.org/reader/17a2627fca7585df99f9d214831992a3756ed772)
 
@@ -14,7 +16,7 @@ We will run modified iterations of the simulation in which the following changes
 - One-way aisle store layout
 A possible extension is to run the simulation in a layout of an Olin building, such as the dining hall, rather than a supermarket. Another route would be replicating the long-staying air borne property of covid-19 and making some nodes in the graph “infected” after an infected person stays there.
 
-5. [Picture]
+5. ![expected_results_sketch (2)](https://github.com/RebeccaFlach/covid-modeling/assets/47285707/54c7595f-0f55-4f01-b93b-a93c34377e65)
 
 6. The paper focuses on the total amount of time that a susceptible person is within range of an infected person, so we will use that as our primary measure to compare with the original paper. 
 
