@@ -23,6 +23,15 @@ Customers enter the store at a constant arrival rate λ, starting from the entra
 
 Upon entering the store, customers are either infectious or susceptible. The proportion of infectious customers is determined by probability p. Furthermore, the virus transmission rate is denoted by β. We assume that susceptible customers become infected in proportion to their total exposure time E, defined as the cumulative duration during which susceptible customers are in the same zone as infectious customers. Consequently, the number of infections is given by the transmission rate β multiplied by the total exposure time E.
 
+For our initial simulation, our default parameters are as follows:
+| Parameter | Default value |
+| -------- | ------- |
+| Arrival rate (λ) | 2.55 customer/min |
+| Mean wait time at each node (τ) | 0.2 min |
+| Percentage of infected customers (p) | 0.11% |
+| Transmission rate (β) | 1.41e-9 per min |
+| Length of opening hours (H) | 14 hours |
+
 Following this, we investigate some common covid exposure interventions such as:
 
 * Varying customer arrival rate
