@@ -86,7 +86,7 @@ Following this, we investigate some common COVID exposure interventions such as:
 
 ### Face Masks
 
-We implemented a fask mask policy by mulitplying the transmission rate by 'relative transmission risk reduction' factor of RRR = 0.17. Therefore, when we multiply beta by RRR, the number of infecitions is also reduced by the same factor from 8.23e-9 to 1.4e-9.
+We implemented a fask mask policy by mulitplying the transmission rate by a 'relative transmission risk reduction' factor of RRR = 0.17. Therefore, when we multiply β by RRR, the number of infections is also reduced by the same factor from 8.23e-9 to 1.4e-9.
 
 | Metric | Mean |
 | -------- | ------- |
