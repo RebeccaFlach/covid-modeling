@@ -98,8 +98,15 @@ We implemented a one-way aisle layout by changing the store graph to a directed 
 
 [NOT COMPLETED]
 
-### Interpretation
+## Interpretation
 
+Our original simulation with no COVID exposure interventions averaged about 8.23e-9 infections per day.
+
+When trying to reduce the COVID exposure via controlling the customer arrival rate, we see that the number of infections per day is quadratically proportional to the rate at which customers enter the store. This makes sense intuitively. So, the lower the customer arrival rate, the lower the average exposure time/infections.
+
+When trying to reduce the COVID exposure via controlling the maximum store capacity, we see that the number of infections per day is quadratically proportional to the maximum number of customers allowed in the store until that value reaches about 15, in which it then caps off at about our original rate of 8.23e-9 infections per day. On closer inspection of our original simulation, we see that the store averaged around 15 customers in the store at any time. With that knowledge, there are two routes: keep the maximum capacity below the current average of 15 customers or allow it to go above 15 customers since, according to the model, there will not be an increase in infections.
+
+When trying to reduce the COVID exposure via implementing a fask mask policy, we reduced the number of infections by a relative transmission risk reduction' factor of RRR = 0.17. To no surpirse, this decreased the number of average daily infections from 8.23e-9 to 1.4e-9. Based on our current results, this method seems to be the easiest to implement as it allows for the same number of customers to shop, while dramatically decreasing the number of daily infections.
 
 
 ## Extension
