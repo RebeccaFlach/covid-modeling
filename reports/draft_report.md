@@ -13,6 +13,16 @@ In the study we replicated [1], the authors propose an agent-based model to calc
 
 Supermarket layouts are represented as networks, wherein nodes correspond to different zones categorized into four types: entrance, exit, till, and shelf.
 
+![store_network](https://github.com/RebeccaFlach/covid-modeling/assets/47285707/3f6a30cc-4356-48cb-869a-645037e10851)
+
+**Figure 1: Store network visualization**, with the nodes defined by:
+| Zone Type | Node(s) |
+| -------- | ------- |
+| Entrance | 39, 40, 41 |
+| Till | 33, 34, 35 |
+| Exit | 42 |
+| Shelf | All other undefined nodes |
+
 #### Customer Mobility
 
 Customers enter the store at a constant arrival rate λ, starting from the entrance node. Each customer is assigned a random path through the supermarket from a set of paths generated using synthetic data. At each node along their path, customers pause for a random duration T, representing the time spent selecting items from the shelf. After this waiting period, customers proceed to the next node in their path. Upon reaching the exit node, customers are removed from the simulation.
@@ -55,13 +65,13 @@ Following this, we investigate some common COVID exposure interventions such as:
 
 ### Customer Arrival Rate
 
-**Figure 1: Infections v. Infections v. Customer Arrival Rate**, representing the relationship between the average number of infections per day vs the the rate at which customers enter the store. We performed a parameter sweep to investigate the impacts of changing the arrival rate, ranging from 0.1 to 2.5. The remaining parameters are set to their default values. 
+**Figure 2: Infections v. Infections v. Customer Arrival Rate**, representing the relationship between the average number of infections per day vs the the rate at which customers enter the store. We performed a parameter sweep to investigate the impacts of changing the arrival rate, ranging from 0.1 to 2.5. The remaining parameters are set to their default values. 
 
 ![max_capacity_figure](https://github.com/RebeccaFlach/COVID-modeling/assets/47285707/37f0883e-f6d0-426b-85fe-17559ce86f73)
 
 ### Store Maximum Capacity
 
-**Figure 2: Infections v. Maximum Capacity**, representing the relationship between the average number of infections per day vs the maximum number of customers allowed in the store. We performed a parameter sweep to investigate the impacts of changing the maximum capacity in the store, ranging from 1 to 30. The remaining parameters are set to their default values. 
+**Figure 3: Infections v. Maximum Capacity**, representing the relationship between the average number of infections per day vs the maximum number of customers allowed in the store. We performed a parameter sweep to investigate the impacts of changing the maximum capacity in the store, ranging from 1 to 30. The remaining parameters are set to their default values. 
 
 ### Face Masks
 
