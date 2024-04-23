@@ -3,11 +3,11 @@
 By: Rebecca Flach and Daniel Quinteros
 
 ## Abstract
-In this paper, we use agent-based models to investigate risk factors for COVID transmission in supermarkets and similar environments.
+Our study replicates and extends previous research on COVID-19 transmission in supermarkets using an agent-based model. We analyze factors such as customer mobility, virus transmission, and intervention strategies to mitigate the spread. Results suggest that controlling customer arrival rates and implementing face mask policies significantly reduce infections. However, the model has limitations, including simplified infection mechanisms and synthetic paths.
 
 ## Methodology
 
-We replicated the expirements conducted in **Modeling COVID-19 transmission in supermarkets using an agent-based model** [1], where the authors propose an agent-based model to calculate total exposure time, representing the duration customers spend near infected individuals, and estimate infection rates using a basic transmission model.
+We replicated the expirements conducted in **Modeling COVID-19 transmission in supermarkets using an agent-based model** [1], where the authors propose an agent-based model to calculate total exposure time, representing the duration customers spend near infected individuals, and estimate infection rates using a basic transmission model in order to offer insights into mitigating the spread of COVID-19
 
 #### Store Graph
 
@@ -124,6 +124,8 @@ For our extension, we recreate the same experiments with a space at Olin, rather
 ![extension_heatmap](https://github.com/RebeccaFlach/covid-modeling/assets/47285707/2e58b7ba-c71d-4f00-b588-e39dec872f6d)
 
 **Figure 6: Olin space network heatmap visualization** based on mean exposure time in each zone. The color ranges from black to bright red. The brighter the red, the higher the average exposure time is in that zone.
+
+[NOT COMPLETED]
 
 ## Causes for concern
 
