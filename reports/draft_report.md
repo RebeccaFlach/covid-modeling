@@ -40,7 +40,7 @@ With the total exposure time being on average (FILL) min/day, and the transmissi
 Following this, we investigate some common COVID exposure interventions such as:
 
 * Controlling the rate of customer arrival
-    * Done by performing a parameter sweep, varying the rate at which customers enter the store from 0 to 2.55 customers/min.
+    * Done by performing a parameter sweep, varying the rate at which customers enter the store from 0 to 2.5 customers/min.
 
 * Restricting maximum number of customers in the store
     * Done by performing a parameter sweep, varying the maximum store capacity from 1 to 30 customers.
@@ -53,9 +53,26 @@ Following this, we investigate some common COVID exposure interventions such as:
 
 ## Results
 
+### Customer Arrival Rate
+
+**Figure 1: Infections v. Infections v. Customer Arrival Rate**, representing the relationship between the average number of infections per day vs the the rate at which customers enter the store. We performed a parameter sweep to investigate the impacts of changing the arrival rate, ranging from 0.1 to 2.5. The remaining parameters are set to their default values. 
+
 ![max_capacity_figure](https://github.com/RebeccaFlach/COVID-modeling/assets/47285707/37f0883e-f6d0-426b-85fe-17559ce86f73)
 
-**Figure 1: Infections v. Maximum Capacity**, representing the relationship between the average number of infections per day vs the maximum number of customers allowed in the store. We performed a parameter sweep to investigate the impacts of changing the maximum capacity in the store, ranging from 1 to 30. The remaining parameters are set to their default values. 
+### Store Maximum Capacity
+
+**Figure 2: Infections v. Maximum Capacity**, representing the relationship between the average number of infections per day vs the maximum number of customers allowed in the store. We performed a parameter sweep to investigate the impacts of changing the maximum capacity in the store, ranging from 1 to 30. The remaining parameters are set to their default values. 
+
+### Face Masks
+
+We implemented a fask mask policy by mulitplying the transmission rate by 'relative transmission risk reduction' factor of 0.17.
+
+After running 1000 simulations, each of which simulates a day in the synthetic store, our results provided us with the metric as the orignal simulation:
+| Metric | Mean |
+| -------- | ------- |
+| Total exposure time | (FILL) |
+
+With the total exposure time being on average (FILL) min/day, and the transmission rate β = 1.41e-9 per min, as well as the relative transmission risk reduction' factor of 0.17, we can multiply the three to find that the average number of infections per day = (FILL) * β = 1.41e-9 * 0.17 = (FILL).
 
 ### Interpretation
 
