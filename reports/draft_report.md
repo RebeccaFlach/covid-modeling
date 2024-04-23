@@ -43,9 +43,12 @@ For our initial simulation, our default parameters are as follows:
 After running 1000 simulations, each of which simulates a day in the synthetic store, our results provided us with the following metric:
 | Metric | Mean |
 | -------- | ------- |
-| Total exposure time | (FILL) |
+| Total exposure time | 5.84 |
 
-With the total exposure time being on average (FILL) min/day, and the transmission rate β = 1.41e-9 per min, we can multiply the two to find that the average number of infections per day is (FILL).
+With the total exposure time being on average 5.84 min/day, and the transmission rate β = 1.41e-9 per min, we can multiply the two to find that the average number of infections per day.
+| Metric | Mean |
+| -------- | ------- |
+| Number of Infections (per day) | 8.23e-9 |
 
 In addition, our model allows us to log the mean exposure time in each zone. From this heatmap, we can investigate any possible 'hotspots' that could be mitigated.  
 
