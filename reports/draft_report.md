@@ -76,7 +76,7 @@ Following this, we explore some common COVID-19 exposure interventions such as:
 
 ![arrival_rate_figure](https://github.com/RebeccaFlach/covid-modeling/assets/47285707/dce121a0-2e7c-43b0-a068-6aa552deaa68)
 
-**Figure 3: Infections v. Infections v. Customer Arrival Rate**, representing the relationship between the average number of infections per day vs. the rate at which customers enter the store. We perform a parameter sweep to investigate the impacts of changing the arrival rate, ranging from 0.1 to 2.5. The remaining parameters are set to their default values.
+**Figure 3: Infections v. Customer Arrival Rate**, representing the relationship between the average number of infections per day vs. the rate at which customers enter the store. We perform a parameter sweep to investigate the impacts of changing the arrival rate, ranging from 0.1 to 2.5. The remaining parameters are set to their default values.
 
 ### Store Maximum Capacity
 
@@ -85,7 +85,7 @@ Following this, we explore some common COVID-19 exposure interventions such as:
 **Figure 4: Infections v. Maximum Capacity**, representing the relationship between the average number of infections per day vs. the maximum number of customers allowed in the store. We perform a parameter sweep to investigate the impacts of changing the maximum capacity in the store, ranging from 1 to 30. The remaining parameters are set to their default values.
 ### Face Masks
 
-We implement a face mask policy by reducing the transmission rate. This decreases the number of average daily infections from 8.23e-9 to 1.4e-9.
+We implement a face mask policy by reducing the transmission rate via scaling by a 'relative transmission risk reduction' factor RRR = 0.17. This decreases the number of average daily infections from 8.23e-9 to 1.4e-9.
 
 | Metric | Mean |
 | -------- | ------- |
