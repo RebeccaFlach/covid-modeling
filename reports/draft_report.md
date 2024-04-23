@@ -45,7 +45,7 @@ After running 1000 simulations, each of which simulates a day in the synthetic s
 | -------- | ------- |
 | Total exposure time | 5.84 |
 
-With the total exposure time being on average 5.84 min/day, and the transmission rate β = 1.41e-9 per min, we can multiply the two to find that the average number of infections per day.
+With the total exposure time being on average 5.84 min/day, and the transmission rate β = 1.41e-9 per min, we can multiply the two to find the average number of infections per day.
 | Metric | Mean |
 | -------- | ------- |
 | Number of Infections (per day) | 8.23e-9 |
@@ -86,14 +86,11 @@ Following this, we investigate some common COVID exposure interventions such as:
 
 ### Face Masks
 
-We implemented a fask mask policy by mulitplying the transmission rate by 'relative transmission risk reduction' factor of 0.17.
+We implemented a fask mask policy by mulitplying the transmission rate by 'relative transmission risk reduction' factor of RRR = 0.17. Therefore, when we multiply beta by RRR, the number of infecitions is also reduced by the same factor from 8.23e-9 to 1.4e-9.
 
-After running 1000 simulations, each of which simulates a day in the synthetic store, our results provided us with the metric as the orignal simulation:
 | Metric | Mean |
 | -------- | ------- |
-| Total exposure time | (FILL) |
-
-With the total exposure time being on average (FILL) min/day, and the transmission rate β = 1.41e-9 per min, as well as the relative transmission risk reduction' factor of 0.17, we can multiply the three to find that the average number of infections per day = (FILL) * 1.41e-9 * 0.17 = (FILL).
+| Number of Infections (per day) | 1.4e-9 |
 
 ### Interpretation
 
