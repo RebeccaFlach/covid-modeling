@@ -47,6 +47,12 @@ After running 1000 simulations, each of which simulates a day in the synthetic s
 
 With the total exposure time being on average (FILL) min/day, and the transmission rate β = 1.41e-9 per min, we can multiply the two to find that the average number of infections per day is (FILL).
 
+In addition, our model allows us to log the mean exposure time in each zone. From this heatmap, we can investigate any possible 'hotspots' that could be mitigated.  
+
+![initial_heatmap](https://github.com/RebeccaFlach/covid-modeling/assets/47285707/5bf27058-0087-4c44-b4f2-94ee5b296b73)
+
+**Figure 2: Heatmap visualization** of the store network based on mean exposure time in each zone. The color ranges from black to bright red. The brighter the red, the higher the average exposure time is in that zone.
+
 Following this, we investigate some common COVID exposure interventions such as:
 
 * Controlling the rate of customer arrival
@@ -67,13 +73,13 @@ Following this, we investigate some common COVID exposure interventions such as:
 
 ![arrival_rate_figure](https://github.com/RebeccaFlach/covid-modeling/assets/47285707/dce121a0-2e7c-43b0-a068-6aa552deaa68)
 
-**Figure 2: Infections v. Infections v. Customer Arrival Rate**, representing the relationship between the average number of infections per day vs the the rate at which customers enter the store. We performed a parameter sweep to investigate the impacts of changing the arrival rate, ranging from 0.1 to 2.5. The remaining parameters are set to their default values. 
+**Figure 3: Infections v. Infections v. Customer Arrival Rate**, representing the relationship between the average number of infections per day vs the the rate at which customers enter the store. We performed a parameter sweep to investigate the impacts of changing the arrival rate, ranging from 0.1 to 2.5. The remaining parameters are set to their default values. 
 
 ### Store Maximum Capacity
 
 ![max_capacity_figure](https://github.com/RebeccaFlach/COVID-modeling/assets/47285707/37f0883e-f6d0-426b-85fe-17559ce86f73)
 
-**Figure 3: Infections v. Maximum Capacity**, representing the relationship between the average number of infections per day vs the maximum number of customers allowed in the store. We performed a parameter sweep to investigate the impacts of changing the maximum capacity in the store, ranging from 1 to 30. The remaining parameters are set to their default values. 
+**Figure 4: Infections v. Maximum Capacity**, representing the relationship between the average number of infections per day vs the maximum number of customers allowed in the store. We performed a parameter sweep to investigate the impacts of changing the maximum capacity in the store, ranging from 1 to 30. The remaining parameters are set to their default values. 
 
 ### Face Masks
 
@@ -96,7 +102,7 @@ For our exnetnsion, we recreated the same experiments with a space at Olin, rath
 
 ![extension_network](https://github.com/RebeccaFlach/covid-modeling/assets/47285707/8cc31e98-dc57-4858-a753-d8d0f2c2c09b)
 
-**Figure 4: Olin space network visualization**, with the nodes defined by:
+**Figure 5: Olin space network visualization**, with the nodes defined by:
 | Zone Type | Node(s) |
 | -------- | ------- |
 | Entrance | 0 |
