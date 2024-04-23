@@ -90,7 +90,17 @@ With the total exposure time being on average (FILL) min/day, and the transmissi
 
 ## Extension
 
-![alt text](image.png)
+For our exnetnsion, we recreated the same experiments with a space at Olin, rather than a synthetic store.
+
+![extension_network](https://github.com/RebeccaFlach/covid-modeling/assets/47285707/8cc31e98-dc57-4858-a753-d8d0f2c2c09b)
+
+**Figure 4: Olin space network visualization**, with the nodes defined by:
+| Zone Type | Node(s) |
+| -------- | ------- |
+| Entrance | 0 |
+| Till | 10 |
+| Exit | 11 |
+| Shelf | All other undefined nodes |
 
 
 ## Causes for concern
