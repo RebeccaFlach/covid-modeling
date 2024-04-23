@@ -56,7 +56,7 @@ In addition, our model allows us to log the mean exposure time in each zone. Fro
 
 **Figure 2: Store network heatmap visualization** based on mean exposure time in each zone. The color ranges from black to bright red. The brighter the red, the higher the average exposure time is in that zone.
 
-Following this, we investigate some common COVID exposure interventions such as:
+Following this, we investigate some common COVID-19 exposure interventions such as:
 
 * Controlling the rate of customer arrival
     * Done by performing a parameter sweep, varying the rate at which customers enter the store from 0 to 2.5 customers/min.
@@ -100,13 +100,13 @@ We implemented a one-way aisle layout by changing the store graph to a directed 
 
 ## Interpretation
 
-Our original simulation with no COVID exposure interventions averaged about 8.23e-9 infections per day.
+Our original simulation with no COVID-19 exposure interventions averaged about 8.23e-9 infections per day.
 
-When trying to reduce the COVID exposure via controlling the customer arrival rate, we see that the number of infections per day is quadratically proportional to the rate at which customers enter the store. This makes sense intuitively. So, the lower the customer arrival rate, the lower the average exposure time/infections.
+When trying to reduce the COVID-19 exposure via controlling the customer arrival rate, we see that the number of infections per day is quadratically proportional to the rate at which customers enter the store. This makes sense intuitively. So, the lower the customer arrival rate, the lower the average exposure time/infections.
 
-When trying to reduce the COVID exposure via controlling the maximum store capacity, we see that the number of infections per day is quadratically proportional to the maximum number of customers allowed in the store until that value reaches about 15, in which it then caps off at about our original rate of 8.23e-9 infections per day. On closer inspection of our original simulation, we see that the store averaged around 15 customers in the store at any time. With that knowledge, there are two routes: keep the maximum capacity below the current average of 15 customers or allow it to go above 15 customers since, according to the model, there will not be an increase in infections.
+When trying to reduce the COVID-19 exposure via controlling the maximum store capacity, we see that the number of infections per day is quadratically proportional to the maximum number of customers allowed in the store until that value reaches about 15, in which it then caps off at about our original rate of 8.23e-9 infections per day. On closer inspection of our original simulation, we see that the store averaged around 15 customers in the store at any time. With that knowledge, there are two routes: keep the maximum capacity below the current average of 15 customers or allow it to go above 15 customers since, according to the model, there will not be an increase in infections.
 
-When trying to reduce the COVID exposure via implementing a fask mask policy, we reduced the number of infections by a relative transmission risk reduction' factor of RRR = 0.17. To no surpirse, this decreased the number of average daily infections from 8.23e-9 to 1.4e-9. Based on our current results, this method seems to be the easiest to implement as it allows for the same number of customers to shop, while dramatically decreasing the number of daily infections.
+When trying to reduce the COVID-19 exposure via implementing a fask mask policy, we reduced the number of infections by a relative transmission risk reduction' factor of RRR = 0.17. To no surpirse, this decreased the number of average daily infections from 8.23e-9 to 1.4e-9. Based on our current results, this method seems to be the easiest to implement as it allows for the same number of customers to shop, while dramatically decreasing the number of daily infections.
 
 
 ## Extension
@@ -134,7 +134,7 @@ For our exnetnsion, we recreated the same experiments with a space at Olin, rath
 ## Annotated Bibliography
 [1] [**Modeling COVID-19 transmission in supermarkets using an agent-based model**](https://www.semanticscholar.org/reader/17a2627fca7585df99f9d214831992a3756ed772) by Fabian Ying, Neave O’Clery
 
-In this paper, the authors investigate how COVID is transmitted within a supermarket, and use their model to determine the most effective interventions to decrease spread. In their primary experiment, they model a small supermarket using a graph, where each node is a place where a customer would stop and interact with the shelves, register, or other important point. They then create agents to represent customers, each with a random path through the store and time spent at each location. Infection risk is estimated by the amount of time a susceptible agent spends in proximity to an infected agent. They find that transmission risk is increased by bottleneck points, like the registers, and that limiting the number of customers in the store is an effective way to reduce transmission.
+In this paper, the authors investigate how COVID-19 is transmitted within a supermarket, and use their model to determine the most effective interventions to decrease spread. In their primary experiment, they model a small supermarket using a graph, where each node is a place where a customer would stop and interact with the shelves, register, or other important point. They then create agents to represent customers, each with a random path through the store and time spent at each location. Infection risk is estimated by the amount of time a susceptible agent spends in proximity to an infected agent. They find that transmission risk is increased by bottleneck points, like the registers, and that limiting the number of customers in the store is an effective way to reduce transmission.
 
 ## Next steps
 8) Outline next steps.  For each team member, what do you plan to work on immediately?  For the team, what do you think you can get done in the next week?  Consider using GitHub Projects to make a kanban board to track tasks.
