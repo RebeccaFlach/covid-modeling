@@ -7,7 +7,7 @@ In this paper, we use agent-based models to investigate risk factors for COVID t
 
 ## Methodology
 
-We replicated **Modeling COVID-19 transmission in supermarkets using an agent-based model** [1], where the authors propose an agent-based model to calculate total exposure time, representing the duration customers spend near infected individuals, and estimate infection rates using a basic transmission model.
+We replicated the expirements conducted in **Modeling COVID-19 transmission in supermarkets using an agent-based model** [1], where the authors propose an agent-based model to calculate total exposure time, representing the duration customers spend near infected individuals, and estimate infection rates using a basic transmission model.
 
 #### Store Graph
 
