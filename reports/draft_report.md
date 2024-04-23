@@ -127,7 +127,7 @@ For our extension, we recreate the same experiments with a space at Olin, rather
 
 ## Causes for concern
 
-7) Identify causes for concern.  Review the criteria for what makes a good project and identify any areas where your project might be problematic.
+Our replication and extensions may offer insights into mitigating the spread of COVID-19. However, it's important to note that like all models concerning health and medical safety, it should not be considered definitive. This model has limitations, such as the use of synthetic pre-generated paths, the basic infection mechanism relying on exposure time, the constant arrival rate, and other factors.
 
 ## Annotated Bibliography
 [1] [**Modeling COVID-19 transmission in supermarkets using an agent-based model**](https://www.semanticscholar.org/reader/17a2627fca7585df99f9d214831992a3756ed772) by Fabian Ying, Neave O’Clery
