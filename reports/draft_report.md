@@ -65,11 +65,13 @@ Following this, we investigate some common COVID exposure interventions such as:
 
 ### Customer Arrival Rate
 
+![arrival_rate_figure](https://github.com/RebeccaFlach/covid-modeling/assets/47285707/dce121a0-2e7c-43b0-a068-6aa552deaa68)
+
 **Figure 2: Infections v. Infections v. Customer Arrival Rate**, representing the relationship between the average number of infections per day vs the the rate at which customers enter the store. We performed a parameter sweep to investigate the impacts of changing the arrival rate, ranging from 0.1 to 2.5. The remaining parameters are set to their default values. 
 
-![max_capacity_figure](https://github.com/RebeccaFlach/COVID-modeling/assets/47285707/37f0883e-f6d0-426b-85fe-17559ce86f73)
-
 ### Store Maximum Capacity
+
+![max_capacity_figure](https://github.com/RebeccaFlach/COVID-modeling/assets/47285707/37f0883e-f6d0-426b-85fe-17559ce86f73)
 
 **Figure 3: Infections v. Maximum Capacity**, representing the relationship between the average number of infections per day vs the maximum number of customers allowed in the store. We performed a parameter sweep to investigate the impacts of changing the maximum capacity in the store, ranging from 1 to 30. The remaining parameters are set to their default values. 
 
