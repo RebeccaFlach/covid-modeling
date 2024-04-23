@@ -7,7 +7,7 @@ Our study replicates and extends previous research on COVID-19 transmission in s
 
 ## Methodology
 
-We replicated the expirements conducted in **Modeling COVID-19 transmission in supermarkets using an agent-based model** [1], where the authors propose an agent-based model to calculate total exposure time, representing the duration customers spend near infected individuals, and estimate infection rates using a basic transmission model in order to offer insights into mitigating the spread of COVID-19
+We replicated the expirements conducted in **Modeling COVID-19 transmission in supermarkets using an agent-based model** [1], where the authors propose an agent-based model to calculate total exposure time, representing the duration customers spend near infected individuals, and estimate infection rates using a basic transmission model in order to offer insights into mitigating the spread of COVID-19.
 
 #### Store Graph
 
