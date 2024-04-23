@@ -25,21 +25,17 @@ Upon entering the store, customers are either infectious or susceptible. The pro
 
 Following this, we investigate some common covid exposure interventions such as:
 
-- varying customer arrival rate
+* Varying customer arrival rate
+    * Done by performing a parameter sweep, varying the maximum store capacity from 1 to 30 customers.
 
-Done by performing a parameter sweep, varying the maximum store capacity from 1 to 30 customers.
+* Restricting maximum number of customers in the store
+    * Done by performing a parameter sweep, varying the rate at which customers enter the store from 0 to 2.55 customers/min.
 
-- restricting maximum number of customers in the store
+* Face masks
+    * Done by implementing a fask mask policy via a reduction in the transmission rate. In this case, mulitply the transmission rate by a factor of 0.17. 
 
-Done by performing a parameter sweep, varying the rate at which customers enter the store from 0 to 2.55 customers/min.
-
-- face masks
-
-Done by implementing a fask mask policy via a reduction in the transmission rate. In this case, mulitply the transmission rate by a factor of 0.17. 
-
-- one-way aisle layout
-
-Done by changing the store graph to a directed graph, where some edges are uni-directional. 
+* One-way aisle layout
+    * Done by changing the store graph to a directed graph, where some edges are uni-directional. 
 
 ## Results
 
