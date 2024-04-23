@@ -54,7 +54,7 @@ In addition, our model allows us to log the mean exposure time in each zone. Fro
 
 ![initial_heatmap](https://github.com/RebeccaFlach/covid-modeling/assets/47285707/5bf27058-0087-4c44-b4f2-94ee5b296b73)
 
-**Figure 2: Heatmap visualization** of the store network based on mean exposure time in each zone. The color ranges from black to bright red. The brighter the red, the higher the average exposure time is in that zone.
+**Figure 2: Store network heatmap visualization** based on mean exposure time in each zone. The color ranges from black to bright red. The brighter the red, the higher the average exposure time is in that zone.
 
 Following this, we investigate some common COVID exposure interventions such as:
 
@@ -92,6 +92,12 @@ We implemented a fask mask policy by mulitplying the transmission rate by a 'rel
 | -------- | ------- |
 | Number of Infections (per day) | 1.4e-9 |
 
+### One-way Aisle Layout
+
+We implemented a one-way aisle layout by changing the store graph to a directed graph, where some edges are uni-directional.
+
+[NOT COMPLETED]
+
 ### Interpretation
 
 
@@ -110,6 +116,9 @@ For our exnetnsion, we recreated the same experiments with a space at Olin, rath
 | Exit | 11 |
 | Shelf | All other undefined nodes |
 
+![extension_heatmap](https://github.com/RebeccaFlach/covid-modeling/assets/47285707/2e58b7ba-c71d-4f00-b588-e39dec872f6d)
+
+**Figure 6: Olin space network heatmap visualization** based on mean exposure time in each zone. The color ranges from black to bright red. The brighter the red, the higher the average exposure time is in that zone.
 
 ## Causes for concern
 
@@ -122,5 +131,10 @@ In this paper, the authors investigate how COVID is transmitted within a superma
 
 ## Next steps
 8) Outline next steps.  For each team member, what do you plan to work on immediately?  For the team, what do you think you can get done in the next week?  Consider using GitHub Projects to make a kanban board to track tasks.
+
+- Finalize one-way layout results
+- Finalize extension simulations/results
+- Finalize interpretations
+- Migrate code to the repo
 
  
