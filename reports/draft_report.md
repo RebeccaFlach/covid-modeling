@@ -7,7 +7,7 @@ In this paper, we use agent based models to investigate risk factors for COVID t
 
 ## Methodology
 
-Supermarkets remained operational during the 2020 COVID-19 pandemic, unlike many other businesses under lockdowns. Due to their indoor congregation, they pose a significant risk for COVID transmission. Hence, ensuring safe shopping environments is crucial. Models analyzing customer behavior and virus spread aid in estimating infection risks and evaluating interventions. In the study we replicated, the authors propose an agent-based model to calculate total exposure time, representing the duration customers spend near infected individuals, and estimate infection rates using a basic transmission model.
+In the study we replicated [1], the authors propose an agent-based model to calculate total exposure time, representing the duration customers spend near infected individuals, and estimate infection rates using a basic transmission model.
 
 #### Store Graph
 
