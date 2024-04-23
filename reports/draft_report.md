@@ -5,15 +5,41 @@ By: Rebecca Flach and Daniel Quinteros
 ## Abstract
 In this paper, we use agent based models to investigate risk factors for COVID transmission in supermarkets and similar environments. 
 
-## Annotated Bibliography
-[**Modeling COVID-19 transmission in supermarkets using an agent-based model**](https://www.semanticscholar.org/reader/17a2627fca7585df99f9d214831992a3756ed772) by Fabian Ying, Neave O’Clery
-
-In this paper, the authors investigate how COVID is transmitted within a supermarket, and use their model to determine the most effective interventions to decrease spread. In their primary experiment, they model a small supermarket using a graph, where each node is a place where a customer would stop and interact with the shelves, register, or other important point. They then create agents to represent customers, each with a random path through the store and time spent at each location. Infection risk is estimated by the amount of time a susceptible agent spends in proximity to an infected agent. They find that transmission risk is increased by bottleneck points, like the registers, and that limiting the number of customers in the store is an effective way to reduce transmission.
-
 ## Methodology
 
-
 4) A description of the experiment from these papers that you are replicating and the extensions or variations of those experiments you are working on.
+
+
+
+#### Store Graph
+
+In the study we replicated, supermarket layouts are represented as networks, wherein nodes correspond to different zones categorized into four types: entrance, exit, till, and shelf.
+
+#### Customer Mobility
+
+Customers enter the store at a constant arrival rate λ, starting from the entrance node. Each customer is assigned a random path through the supermarket from a set of paths generated using synthetic data. At each node along their path, customers pause for a random duration T, representing the time spent selecting items from the shelf. After this waiting period, customers proceed to the next node in their path. Upon reaching the exit node, customers are removed from the simulation.
+
+#### Virus Transmission
+
+Upon entering the store, customers are either infectious or susceptible. The proportion of infectious customers is determined by probability p. Furthermore, the virus transmission rate is denoted by β. We assume that susceptible customers become infected in proportion to their total exposure time E, defined as the cumulative duration during which susceptible customers are in the same zone as infectious customers. Consequently, the number of infections is given by the transmission rate β multiplied by the total exposure time E.
+
+Following this, we investigate some common covid exposure interventions such as:
+
+- varying customer arrival rate
+
+Done by performing a parameter sweep, varying the maximum store capacity from 1 to 30 customers.
+
+- restricting maximum number of customers in the store
+
+Done by performing a parameter sweep, varying the rate at which customers enter the store from 0 to 2.55 customers/min.
+
+- face masks
+
+Done by implementing a fask mask policy via a reduction in the transmission rate. In this case, mulitply the transmission rate by a factor of 0.17. 
+
+- one-way aisle layout
+
+Done by changing the store graph to a directed graph, where some edges are uni-directional. 
 
 ## Results
 
@@ -30,6 +56,10 @@ In this paper, the authors investigate how COVID is transmitted within a superma
 
 7) Identify causes for concern.  Review the criteria for what makes a good project and identify any areas where your project might be problematic.
 
+## Annotated Bibliography
+[1] [**Modeling COVID-19 transmission in supermarkets using an agent-based model**](https://www.semanticscholar.org/reader/17a2627fca7585df99f9d214831992a3756ed772) by Fabian Ying, Neave O’Clery
+
+In this paper, the authors investigate how COVID is transmitted within a supermarket, and use their model to determine the most effective interventions to decrease spread. In their primary experiment, they model a small supermarket using a graph, where each node is a place where a customer would stop and interact with the shelves, register, or other important point. They then create agents to represent customers, each with a random path through the store and time spent at each location. Infection risk is estimated by the amount of time a susceptible agent spends in proximity to an infected agent. They find that transmission risk is increased by bottleneck points, like the registers, and that limiting the number of customers in the store is an effective way to reduce transmission.
 
 ## Next steps
 8) Outline next steps.  For each team member, what do you plan to work on immediately?  For the team, what do you think you can get done in the next week?  Consider using GitHub Projects to make a kanban board to track tasks.
