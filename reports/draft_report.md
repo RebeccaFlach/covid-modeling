@@ -72,7 +72,7 @@ After running 1000 simulations, each of which simulates a day in the synthetic s
 | -------- | ------- |
 | Total exposure time | (FILL) |
 
-With the total exposure time being on average (FILL) min/day, and the transmission rate β = 1.41e-9 per min, as well as the relative transmission risk reduction' factor of 0.17, we can multiply the three to find that the average number of infections per day = (FILL) * β = 1.41e-9 * 0.17 = (FILL).
+With the total exposure time being on average (FILL) min/day, and the transmission rate β = 1.41e-9 per min, as well as the relative transmission risk reduction' factor of 0.17, we can multiply the three to find that the average number of infections per day = (FILL) * 1.41e-9 * 0.17 = (FILL).
 
 ### Interpretation
 
