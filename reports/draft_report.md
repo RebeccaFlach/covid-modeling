@@ -99,13 +99,13 @@ We implement a one-way aisle layout by changing the store graph to a directed gr
 
 ## Interpretation
 
-Our original simulation with no COVID-19 exposure interventions averages about 8.23e-9 infections per day.
+Our original simulation without COVID-19 exposure interventions shows an average of 8.23e-9 infections per day.
 
-When attempting to reduce COVID-19 exposure by controlling the customer arrival rate, we observe that the number of infections per day is quadratically proportional to the rate at which customers enter the store. This intuitively makes sense. So, the lower the customer arrival rate, the lower the average exposure time/infections.
+When we try to decrease COVID-19 exposure by regulating customer arrival rates, we observe that the number of infections per day increases quadratically with the rate at which customers enter the store. This relationship is intuitive: lower customer arrival rates correspond to reduced average exposure time and infections.
 
-When attempting to reduce COVID-19 exposure by controlling the maximum store capacity, we see that the number of infections per day is quadratically proportional to the maximum number of customers allowed in the store until that value reaches about 15, at which point it then levels off at about our original rate of 8.23e-9 infections per day. Upon closer inspection of our original simulation, we find that the store averaged around 15 customers at any given time. With that knowledge, there are two routes: either keep the maximum capacity below the current average of 15 customers or allow it to exceed 15 customers since, according to the model, there will not be an increase in infections.
+In attempting to reduce COVID-19 exposure by controlling the maximum store capacity, we find that the number of infections per day is quadratically proportional to the maximum number of customers allowed in the store until it reaches about 15. At this point, it levels off to approximately our original rate of 8.23e-9 infections per day. Upon closer examination of our initial simulation, we note that the store typically accommodated around 15 customers at any given time. With this insight, we have two options: maintain the maximum capacity below the current average of 15 customers or allow it to exceed 15 customers, as the model suggests no increase in infections beyond this point.
 
-When attempting to reduce COVID-19 exposure by implementing a face mask policy, we reduce the number of infections by a factor of 0.17. This decreases the number of average daily infections from 8.23e-9 to 1.4e-9. Based on our current results, this method seems to be the easiest to implement as it allows for the same number of customers to shop while dramatically decreasing the number of daily infections.
+Implementing a face mask policy to reduce COVID-19 exposure results in a decrease in infections by a factor of 0.17. This reduces the number of average daily infections from 8.23e-9 to 1.4e-9. Based on our current findings, this approach appears to be the simplest to implement while significantly reducing daily infections, allowing the same number of customers to shop.
 
 ## Extension
 
