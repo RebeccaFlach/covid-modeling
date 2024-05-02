@@ -109,21 +109,35 @@ Implementing a face mask policy to reduce COVID-19 exposure results in a decreas
 
 ## Extension
 
-For our extension, we recreate the same experiments with a space at Olin, rather than a synthetic store.
+For our extension, we adapt the model to simulate the same experiments within the dining hall of Olin College of Engineering.
 
-![extension_network](https://github.com/RebeccaFlach/covid-modeling/assets/47285707/8cc31e98-dc57-4858-a753-d8d0f2c2c09b)
+![dining_hall_network](https://github.com/RebeccaFlach/covid-modeling/assets/47285707/24e98180-d331-4b3c-b4cd-a91cebf535af)
 
-**Figure 5: Olin space network visualization**, with the nodes defined by:
+**Figure 5: Olin dining hall network visualization**, with the nodes defined by:
 | Zone Type | Node(s) |
 | -------- | ------- |
 | Entrance | 0 |
-| Till | 10 |
-| Exit | 11 |
+| Till | 8, 11 |
+| Exit | 12 |
 | Shelf | All other undefined nodes |
 
-![extension_heatmap](https://github.com/RebeccaFlach/covid-modeling/assets/47285707/2e58b7ba-c71d-4f00-b588-e39dec872f6d)
+At the dining hall, the "zone types" can be understood as follows: The entrance serves as the point where students swipe in to gain access. The tills refer to the soda machine and silverware stations. The exit denotes the area where people leave the dining hall. Lastly, the "shelves" designate spaces where food is displayed.
 
-**Figure 6: Olin space network heatmap visualization** based on mean exposure time in each zone. The color ranges from black to bright red. The brighter the red, the higher the average exposure time is in that zone.
+For our initial simulation, we maintained the default parameters utilized in the initial simulation of the store network, with the exception of adjusting the hours of operation to fit the dining hall's schedule. After running 1000 simulations, each simulating a day in the dining hall, our results provided us with the following metric:
+| Metric | Mean |
+| -------- | ------- |
+| Total exposure time | 2.97 min |
+
+With the total exposure time averaging 2.97 min/day, and the transmission rate β = 1.41e-9 per min, we can multiply the two to find the average number of infections per day.
+| Metric | Mean |
+| -------- | ------- |
+| Number of Infections (per day) | 4.19e-09 |
+
+Additionally, our model allows us to log the mean exposure time in each zone. From this heatmap, we can investigate any possible 'hotspots' that could be mitigated.
+
+![dining_hall_heatmap](https://github.com/RebeccaFlach/covid-modeling/assets/47285707/8be502a9-b025-4c9d-8244-a9f9452acf70)
+
+**Figure 6: Olin dining hall heatmap visualization** based on mean exposure time in each zone. The color ranges from black to bright red. The brighter the red, the higher the average exposure time is in that zone.
 
 [NOT COMPLETED]
 
