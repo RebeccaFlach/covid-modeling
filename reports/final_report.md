@@ -7,7 +7,7 @@ Our study replicates and extends previous research on COVID-19 transmission in s
 
 ## Methodology
 
-The following contents of the methodology section replicates the research conducted in [**Modeling COVID-19 transmission in supermarkets using an agent-based model**](https://www.semanticscholar.org/reader/17a2627fca7585df99f9d214831992a3756ed772), where the authors propose an agent-based model to calculate total exposure time, representing the duration customers spend near infected individuals, and estimate infection rates using a basic transmission model in order to offer insights into mitigating the spread of COVID-19.
+The following contents of the methodology section replicates the research conducted in [**Modeling COVID-19 transmission in supermarkets using an agent-based model**](https://www.semanticscholar.org/reader/17a2627fca7585df99f9d214831992a3756ed772) [1], where the authors propose an agent-based model to calculate total exposure time, representing the duration customers spend near infected individuals, and estimate infection rates using a basic transmission model in order to offer insights into mitigating the spread of COVID-19.
 
 #### Store Graph
 
