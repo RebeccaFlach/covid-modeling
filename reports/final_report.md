@@ -5,6 +5,9 @@ By: Rebecca Flach and Daniel Quinteros
 ## Abstract
 Our study replicates and extends previous research on COVID-19 transmission in supermarkets using an agent-based model. We analyze factors such as customer mobility, virus transmission, and intervention strategies to mitigate the spread. Results suggest that controlling customer arrival rates and implementing face mask policies significantly reduce infections. However, the model has limitations, including simplified infection mechanisms and synthetic paths.
 
+## Introduction 
+In the early stages of the COVID-19 pandemic, when lockdowns were widespread, there was a lot of importance placed on preventing infections in the places that had to remain open. This included medical facilities, but also included places like supermarkets, which posed a danger to both customers as well as the essential workers who staffed them. To tackle this, various interventions were implemented, such as changed store layouts, limiting numbers of customers, and mask policies. The paper we are replicating, written in late 2020, investigates the efficacy of these interventions and examines what how COVID-19 spreads in supermarkets. 
+
 ## Methodology
 
 The following contents of the methodology section replicates the research conducted in [**Modeling COVID-19 transmission in supermarkets using an agent-based model**](https://www.semanticscholar.org/reader/17a2627fca7585df99f9d214831992a3756ed772) [1], where the authors propose an agent-based model to calculate total exposure time, representing the duration customers spend near infected individuals, and estimate infection rates using a basic transmission model in order to offer insights into mitigating the spread of COVID-19.
@@ -169,9 +172,20 @@ Following this, we explored the same common COVID-19 exposure interventions:
 
 At maximum restrictions, limiting the number of people in the food area is highly effective at limiting infections. However, above ten people, the effect is negligible. 
 
-## Limitations
+### Student Arrival Rate
+
+![alt text](image-3.png)
+**Figure 10: Infections v. Arrival Rate**, representing the relationship between the average number of infections per day vs. the rate at which students enter the dining hall. We perform a parameter sweep to investigate the impacts of changing the arrival rate, ranging from 0.1 to 6. The remaining parameters are set to their default values.
+
+Infections increase quadratically with the arrival rate of students. This suggests that busy periods in the dining hall, especially the noon lunch rush, could substantially increase the risk of infection. Interventions to spread out the arrival of students during this period could be quite effective. 
+
+
+
+## Limitation
 
 Our replication and extensions may offer insights into mitigating the spread of COVID-19. However, it's important to note that like all models concerning health and medical safety, it should not be considered definitive. This model has limitations, such as the use of synthetic pre-generated paths, the basic infection mechanism relying on exposure time, the constant arrival rate, and other factors. In particular, this original model was created in the early pandemic, using a primitive understanding of the spread of COVID-19, and does not take into account the differences in the current variants of COVID-19. 
+
+As a future step, we could model a more complex infection mechanism that takes into account COVID-19 exposure at further distances. In addition, we could more accurately model the flow of students in the dining hall throughout the day, including peak meal periods. 
 
 ## Annotated Bibliography
 [1] [**Modeling COVID-19 transmission in supermarkets using an agent-based model**](https://www.semanticscholar.org/reader/17a2627fca7585df99f9d214831992a3756ed772) by Fabian Ying, Neave O’Clery
