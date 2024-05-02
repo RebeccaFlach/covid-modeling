@@ -148,7 +148,7 @@ Following this, we explored the same common COVID-19 exposure interventions:
 * Face masks
 * One-way aisle layout 
 
-### Store Maximum Capacity
+### Dining Hall Maximum Capacity
 
 ![dining_hall_max_capacity](https://github.com/RebeccaFlach/covid-modeling/assets/47285707/925b17cc-a929-4485-a8bd-a1046e2f9d69)
 
