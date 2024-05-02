@@ -3,10 +3,11 @@
 By: Rebecca Flach and Daniel Quinteros
 
 ## Abstract
-Our study replicates and extends previous research on COVID-19 transmission in supermarkets using an agent-based model. We analyze factors such as customer mobility, virus transmission, and intervention strategies to mitigate the spread. Results suggest that controlling customer arrival rates and implementing face mask policies significantly reduce infections. However, the model has limitations, including simplified infection mechanisms and synthetic paths.
+Our study replicates and extends previous research on COVID-19 transmission in supermarkets using an agent-based model. We analyze factors such as customer mobility, virus transmission, and intervention strategies to mitigate the spread. Results suggest that controlling customer arrival rates and implementing face mask policies reduces infections. However, the model has limitations, including simplified infection mechanisms and synthetic paths.
 
 ## Introduction 
-In the early stages of the COVID-19 pandemic, when lockdowns were widespread, there was a lot of importance placed on preventing infections in the places that had to remain open. This included medical facilities, but also included places like supermarkets, which posed a danger to both customers as well as the essential workers who staffed them. To tackle this, various interventions were implemented, such as changed store layouts, limiting numbers of customers, and mask policies. The paper we are replicating, written in late 2020, investigates the efficacy of these interventions and examines what how COVID-19 spreads in supermarkets. 
+In the early stages of the COVID-19 pandemic, when lockdowns were widespread, there was a lot of importance placed on preventing infections in the places that had to remain open. This included medical facilities, but also included places like supermarkets, which posed a danger to both customers as well as the essential workers who staffed them. To tackle this, various interventions were implemented, such as changing store layouts, limiting numbers of customers, and mask policies. The paper we are replicating, written in late 2020, investigates the efficacy of these interventions and examines what how COVID-19 spreads in supermarkets. 
+Although COVID-19 spread in supermarkets is a less prevalent issue now, investigating this topic gives us insight into the ways that building planning and social engineering combine to affect disease spread in general. 
 
 ## Methodology
 
@@ -42,6 +43,8 @@ For our initial simulation, our default parameters are as follows:
 | Percentage of infected customers (p) | 0.11% |
 | Transmission rate (β) | 1.41e-9 per min |
 | Length of opening hours (H) | 14 hours |
+
+These default parameters are the same ones used in the original paper. 
 
 After running 1000 simulations, each simulating a day in the synthetic store, our results provided us with the following metric:
 | Metric | Mean |
@@ -166,7 +169,7 @@ Following this, we explored the same common COVID-19 exposure interventions:
 
 **Figure 9: Infections v. Maximum Capacity**, representing the relationship between the average number of infections per day vs. the maximum number of students allowed in the dining hall. We perform a parameter sweep to investigate the impacts of changing the maximum capacity in the dining hall, ranging from 1 to 30. The remaining parameters are set to their default values.
 
-At maximum restrictions, limiting the number of people in the food area is highly effective at limiting infections. However, above ten people, the effect is negligible. 
+When restricted to below ten, and especially below five, limiting the number of people in the food area is effective at limiting infections. However, above ten people, the effect is negligible. 
 
 ### Student Arrival Rate
 
