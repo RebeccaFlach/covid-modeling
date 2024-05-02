@@ -83,6 +83,7 @@ Following this, we explore some common COVID-19 exposure interventions such as:
 ![max_capacity_figure](https://github.com/RebeccaFlach/COVID-modeling/assets/47285707/37f0883e-f6d0-426b-85fe-17559ce86f73)
 
 **Figure 4: Infections v. Maximum Capacity**, representing the relationship between the average number of infections per day vs. the maximum number of customers allowed in the store. We perform a parameter sweep to investigate the impacts of changing the maximum capacity in the store, ranging from 1 to 30. The remaining parameters are set to their default values.
+
 ### Face Masks
 
 We implement a face mask policy by reducing the transmission rate via scaling by a 'relative transmission risk reduction' factor RRR = 0.17. This decreases the number of average daily infections from 8.23e-9 to 1.4e-9.
@@ -139,7 +140,19 @@ Additionally, our model allows us to log the mean exposure time in each zone. Fr
 
 **Figure 6: Olin dining hall heatmap visualization** based on mean exposure time in each zone. The color ranges from black to bright red. The brighter the red, the higher the average exposure time is in that zone.
 
-[NOT COMPLETED]
+
+Following this, we explored the same common COVID-19 exposure interventions:
+
+* Controlling the rate of customer arrival
+* Restricting maximum number of customers in the store
+* Face masks
+* One-way aisle layout 
+
+### Store Maximum Capacity
+
+![dining_hall_max_capacity](https://github.com/RebeccaFlach/covid-modeling/assets/47285707/925b17cc-a929-4485-a8bd-a1046e2f9d69)
+
+**Figure 8: Infections v. Maximum Capacity**, representing the relationship between the average number of infections per day vs. the maximum number of students allowed in the dining hall. We perform a parameter sweep to investigate the impacts of changing the maximum capacity in the dining hall, ranging from 1 to 30. The remaining parameters are set to their default values.
 
 ## Causes for concern
 
